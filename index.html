@@ -7,19 +7,25 @@
         <script src="js/add_del.js"></script>
     </head>
     <body>
+        <div class="body1">
 
-        <!--소개-->
-        <div id="intro">
-            <h1>ToDo List</h1>
-            <p>여러분의 일정 관리용 홈페이지</p>
-            <p>여러분의 일정을 입력하세요</p>
+            <!--소개-->
+            <div id="intro">
+                <h1>ToDo List</h1>
+                <p>여러분의 일정 관리용 홈페이지</p>
+                <p>여러분의 일정을 입력하세요</p>
+            </div>
+            <!--입력창-->
+            <div id="main">
+                <form action="">
+                    <input type="text" id="quest" placeholder="일정을 추가해주세요" autofocus>
+                    <button onclick="newList(); return false;">추가</button>
+                </form>
+
+                <ul id="planList"></ul>
+            </div>
+
         </div>
-        <!--입력창-->
-        <div id="main">
-            <form action="">
-                <input type="text" id="quest" placeholder="일정을 추가해주세요" autofocus>
-                <button onclick="return false;">추가</button>
-            </form>
-        </div>
+
     </body>
 </html>
